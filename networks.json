@@ -1,0 +1,8 @@
+{
+  "sepolia": {
+    "LetSwapFactory": {
+      "address": "0x7acB3A63088ce38ea202203C44611cB7141461d6",
+      "startBlock": 6886368
+    }
+  }
+}
