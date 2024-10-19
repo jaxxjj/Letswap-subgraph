@@ -2,8 +2,7 @@
   "name": "letswap-subgraph",
   "license": "UNLICENSED",
   "scripts": {
-    "codegen": "graph codegen",
-    "build": "graph build",
+    "codegen": "graph codegen --output-dir src/types/",
     "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ letswap-subgraph",
     "create-local": "graph create --node http://localhost:8020/ letswap-subgraph",
     "remove-local": "graph remove --node http://localhost:8020/ letswap-subgraph",
@@ -12,7 +11,12 @@
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.85.0",
-    "@graphprotocol/graph-ts": "0.32.0"
+    "@graphprotocol/graph-ts": "0.32.0",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "6.1.0",
+    "prettier": "1.18.2"
   },
-  "devDependencies": { "matchstick-as": "0.5.0" }
+  "devDependencies": {
+    "matchstick-as": "0.5.0"
+  }
 }
