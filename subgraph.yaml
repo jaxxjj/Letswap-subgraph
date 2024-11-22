@@ -29,7 +29,7 @@ dataSources:
           file: ./abis/ERC20NameBytes.json
       eventHandlers:
         - event: PairCreated(indexed address,indexed address,address,uint256)
-          handler: handlePairCreated
+          handler: handleNewPair
       file: ./src/mappings/factory.ts
 templates:
   - kind: ethereum
